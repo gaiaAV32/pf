@@ -10,6 +10,7 @@
   <link rel="stylesheet" id="css-defaultStyle" href="css/bootstrap.css"/>
   <link rel="stylesheet" id="css-defaultStyle" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css"/>
   <link rel="stylesheet" id="css-defaultStyle" href="css/style.css"/>
+  <link href='https://fonts.googleapis.com/css?family=Cardo:400,700|Vidaloka|Halant:400,600|Petit+Formal+Script|Rufina' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,500,500italic,400italic' rel='stylesheet' type='text/css'>
     
@@ -22,13 +23,18 @@
 
 <body>
 
-<!-- <section>
-    <div class="container">
-        <h1 class="introduction">
-        I am Gaia Di Gregorio and I am a Digital Designer</h1>
-        <span>|</span>
-    </div>
-</section> -->
+<div id="sidebar-wrapper">
+            <span class="sidebar-nav">
+                    <a href="#">
+                        Start Bootstrap
+                    </a>
+            </span>
+            <span class="sidebar-nav">
+                    <a href="#">
+                        Start Bootstrap
+                    </a>
+            </span>
+        </div>
 
 <a href="#" class="back-to-top-button">
     
@@ -42,13 +48,12 @@
         and I am a Digital Designer.
         </h1> 
 
-        <h2 class="introduction fade-in two col-md-12">
-        I Merging Graphic and Web Design, I create smart and elegant interfaces. I'm passionate about fashion, luxury and tech, not just professionally.
+        <h2 class="introduction fade-in two col-md-9">
+        I blend Graphic and Web Design, I create smart and elegant interfaces. I'm passionate about fashion, luxury and tech.
         </h2>
-
-        <h2 class="introduction fade-in three col-md-12">
+        <h3 class="introduction fade-in two col-md-9">
         Below you can find what I made <br> or maybe just get in touch with me.
-        </h2>
+        </h3>
     </div>
 </section>
 
@@ -63,7 +68,12 @@
                 <div class="wrapper project">
 
                     <div class="previewProject col-md-6">
-                        <img src="img/projectPreview-Avenue32.png" class="previewProject">
+                        <a href="http://www.avenue32.com" target="blank">
+                            <div class="hoveringPreveiw">
+                                <img src="img/projectPreview-Avenue32.png" class="previewProject">
+                                <span></span>
+                            </div>
+                        </a>
                     </div>
                     
                     <div class="infoProject col-md-6">
@@ -80,12 +90,12 @@
                             Font-End, Web Design, UX
                         </h3>
 
-                        <button>
+                        <a class="btn" href="avenue32project2.html">
                             view project
-                        </button>
-                        <button>
+                        </a>
+                        <a class="btn" target="blank" href=http://www.avenue32.com>
                             visit website
-                        </button>
+                        </a>
                         
                     </div>
 

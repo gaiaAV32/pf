@@ -1,4 +1,4 @@
-var amountScrolled = 100;
+var amountScrolled = 200;
 
 $(window).scroll(function() {
     if ( $(window).scrollTop() > amountScrolled ) {
