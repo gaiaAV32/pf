@@ -38,11 +38,21 @@
 
 /*sidebar*/
 
+.verticalMenuHome {
+    background-color: #E8E8E8;
+    position: fixed;
+    right: -1000px;
+    padding: 20px;
+    top: 0;
+    z-index: 999;
+    width: 1000px;
+}
+
 .verticalMenu {
     background-color: #E8E8E8;
     position: fixed;
     right: -1000px;
-    padding: 20px 0;
+    padding: 0;
     top: 0;
     z-index: 999;
     width: 1000px;
@@ -53,14 +63,14 @@
   transform-origin: left top 0;
 }
 
-.verticalMenu a{
+.verticalMenu a, .verticalMenuHome a {
   color: #444;
   padding: 20px;
   font-family: 'Roboto';
   font-size: 12px;
 }
 
-.verticalMenu a:active, .verticalMenu a:hover {
+.verticalMenu a:active, .verticalMenu a:hover, .verticalMenuHome a:active, .verticalMenuHome a:hover {
   background-color: #FF77A0;
   text-decoration: none;
   color: #ddd;
@@ -95,6 +105,10 @@ a:active, a:hover {
   font-family: 'roboto';
 }
 
+.btn.right {
+  float: right;
+}
+
 a.btn:active, a.btn:hover {
   background-color: #FF77A0;
   text-decoration: none;
@@ -102,6 +116,44 @@ a.btn:active, a.btn:hover {
   -webkit-box-shadow: none;
   border: 1px solid #ff77a0;
   box-shadow: none;
+}
+
+.btnHolder {
+  display: block;
+}
+
+a.btn.backhome {
+  width: 40px;
+  height: 40px;
+  background-image: url(../img/back-home.svg);
+  border: none;
+  margin: 10px;
+  opacity: 0.5; 
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+
+a.btn.backhome:active, a.btn.backhome:hover  {
+  opacity: 1;
+}
+
+a.btn.next, a.btn.prev {
+  width: 40px;
+  height: 40px;
+  background-image: url(../img/arrow_pink-01.svg);
+  border: none;
+  margin: 10px 0;
+}
+
+a.btn.prev {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .wrapper {
@@ -150,7 +202,12 @@ a.back-to-top-button {
   top: 20px;
   right: 45%;
   left: 45%;
-  background: #FF77A0 center 43%;
+  background-image: url(../img/arrow_pink-01.svg);
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  transform: rotate(270deg);
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   border-radius: 30px;
@@ -167,12 +224,25 @@ a.back-to-top-button {
 
 
 .project {
-  padding: 20px 0; 
+  padding: 60px 0; 
 }
 
 img.previewProject {
   width: 100%;
 }
+
+
+img.previewProject.smaller.right  {
+    width: 50%;
+    float: right;
+    padding-right: 30px;
+  }
+
+img.previewProject.smaller.left  {
+    width: 50%;
+    float: left;
+    padding-left: 30px;
+  }
 
 .previewProject {
   padding: 0;
@@ -235,9 +305,13 @@ h3 {
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 30px;
-    color: #FF77A0;
+    color: #444;
     text-transform: uppercase;
     font-weight: 500;
+}
+
+.infoProject.left h1, .infoProject.left h2, .infoProject.left h3 {
+    text-align: right;
 }
 
 .descriptionProject p {
@@ -280,6 +354,7 @@ img.scrollableImg {
 
 .capture img {
   width: 100%;
+  padding-bottom: 30px;
 }
 /*end project*/
 
