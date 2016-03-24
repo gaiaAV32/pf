@@ -235,7 +235,19 @@ img.previewProject {
 img.previewProject.smaller.right  {
     width: 50%;
     float: right;
-    padding-right: 30px;
+    margin-right: 30px;
+    opacity: 1;
+    background-color: #ffffff;
+  }
+
+img.previewProject.smaller.right:hover  {
+    opacity: 0.3;
+    background-color: #ffffff;
+    -webkit-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    -ms-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    transition: all 600ms ease;
   }
 
 img.previewProject.smaller.left  {
@@ -385,6 +397,60 @@ img.scrollableImg {
   background: rgba(255,255,255,0.0); 
 }
 
+/*about*/
+
+#contact a {
+  color: #444;
+  font-family: 'Roboto', 'sans-serif', 'arial';
+}
+
+.socials {
+  margin-top:60px;
+}
+
+.emailLink, .phoneLink, .linkedinLink {
+  display: inline-block;
+  width: 33%;
+  text-align: center;
+}
+
+#emailIcon {
+  width: 80px;
+  height: 80px;
+  margin: 10% auto;
+  background-image: url("http://airplanemode.eu/gaiadigregorio.co.uk/img/contactIcons/emailIcon.svg");
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-size: 60px;
+  background-position: center;
+  border-radius: 52px;
+}
+
+#phoneIcon {
+  width: 80px;
+  height: 80px;
+  margin: 10% auto;
+  background-image: url("http://airplanemode.eu/gaiadigregorio.co.uk/img/contactIcons/phoneIcon.svg");
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-size: 60px;
+  background-position: center;
+  border-radius: 52px;
+}
+
+#linkedinIcon {
+  width: 80px;
+  height: 80px;
+  margin: 10% auto;
+  background-image: url("http://airplanemode.eu/gaiadigregorio.co.uk/img/contactIcons/linkedinIcon.svg");
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-size: 60px;
+  background-position: center;
+  border-radius: 52px;
+}
+/*end about*/
+
 
 /*footer*/
 
@@ -410,6 +476,11 @@ img.scrollableImg {
 
 @media only screen and (max-width: 768px) {
 
+.wrapper.project.reverse {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 .hideMobile {
     display: none;
     width: 0;
@@ -421,10 +492,24 @@ img.scrollableImg {
 .wrapper.project {
   display: block;
   }
+.infoProject.left h1, .infoProject.left h2, .infoProject.left h3 {
+    text-align: left;
+}
 
+.btn.right {
+    float: left;
+}
 .previewProject, .infoProject  {
     width: 100%;
   }
+
+img.previewProject.smaller.right {
+    width: 50%;
+    float: left;
+    margin-right: 30px;
+    opacity: 1;
+    background-color: #ffffff;
+  } 
 
 .wrapper {
     width: auto;
@@ -442,6 +527,12 @@ img.scrollableImg {
   }
 
 
+img.previewProject.smaller.right  {
+    width: auto;
+    margin: 0 0 20px;
+  }
+
+
 /*project page*/
 #screens {
     position: relative;
@@ -454,7 +545,12 @@ img.scrollableImg {
 /* end project page*/
 
 
+/*about*/
+.emailLink, .phoneLink, .linkedinLink {
+  display: block;
+  width: 100%;
+  }
 
-
+/*end about*/
 
 }
