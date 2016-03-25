@@ -233,7 +233,7 @@ img.previewProject {
 
 
 img.previewProject.smaller.right  {
-    width: 50%;
+    width: 70%;
     float: right;
     margin-right: 30px;
     opacity: 1;
@@ -287,6 +287,15 @@ img.previewProject.smaller.left  {
 
 #previewProject:hover #overlay {
   opacity: 1;
+}
+
+.previewProject.smaller.right {
+  width: 50%;
+  float: right;
+}
+.previewProject.smaller.left {
+  width: 50%;
+  float: left;
 }
 
 #plus {
@@ -503,14 +512,6 @@ img.scrollableImg {
     width: 100%;
   }
 
-img.previewProject.smaller.right {
-    width: 50%;
-    float: left;
-    margin-right: 30px;
-    opacity: 1;
-    background-color: #ffffff;
-  } 
-
 .wrapper {
     width: auto;
     max-width: 1440px;
@@ -526,12 +527,18 @@ img.previewProject.smaller.right {
     display: block;
   }
 
-
-img.previewProject.smaller.right  {
-    width: auto;
-    margin: 0 0 20px;
+img.previewProject.smaller.right {
+    width: 100%;
+    float: left;
+    margin-right: 30px;
+    opacity: 1;
+    background-color: #ffffff;
   }
 
+
+.project {
+  padding: 20px 0; 
+}
 
 /*project page*/
 #screens {
@@ -554,3 +561,24 @@ img.previewProject.smaller.right  {
 /*end about*/
 
 }
+
+
+
+@media only screen and (max-width: 767px) {
+img.previewProject.smaller.right {
+    width: 70%;
+    float: left;
+    margin-right: 30px;
+    opacity: 1;
+    background-color: #ffffff;
+  }
+
+}
+
+
+
+
+
+
+
+
