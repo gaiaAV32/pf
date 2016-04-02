@@ -20,19 +20,24 @@
 }
 
 .fade-in.one {
-  -webkit-animation-delay: 0.7s;
-  -moz-animation-delay: 0.7s;
-  animation-delay: 0.7s;
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  animation-delay: 0.5s;
 }
 .fade-in.two {
-  -webkit-animation-delay: 2.0s;
-  -moz-animation-delay: 2.0s;
-  animation-delay: 2.0s;
+  -webkit-animation-delay: 1.2s;
+  -moz-animation-delay: 1.2s;
+  animation-delay: 1.2s;
 }
 .fade-in.three {
-  -webkit-animation-delay: 2.8s;
-  -moz-animation-delay: 2.8s;
-  animation-delay: 2.8s;
+  -webkit-animation-delay: 1.8s;
+  -moz-animation-delay: 1.8s;
+  animation-delay: 1.8s;
+}
+.fade-in.four {
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  animation-delay: 2s;
 }
 
 
@@ -104,13 +109,20 @@ a:active, a:hover {
 }
 
 
-.btn {
+.btn, .btn-block, .btn-block-half {
   background: none;
   border: 1px solid #ffffff;
   border-radius: 20px;
   margin: 10px 0;
   color: #ffffff;
   font-family: 'roboto';
+  text-align: center;
+  padding: 6px 12px;
+}
+
+.btn-block-half {
+  display: inline-block;
+  width: 49%
 }
 
 .btn.right {
@@ -118,7 +130,7 @@ a:active, a:hover {
   margin-left: 5px;
 }
 
-a.btn:active, a.btn:hover {
+a.btn:active, a.btn:hover, a..btn-block:active, a.btn-block:hover, a.btn-block-half :active, a.btn-block-half:hover {
   background-color: #FF77A0;
   text-decoration: none;
   color: #ddd;
@@ -553,8 +565,9 @@ img.previewProject.smaller.right, img.previewProject.smaller.left {
 
 /*project page*/
 #screens {
-    position: relative;
+    position: inherit;
     height: auto;
+    padding: 0;
   }
 
 .capture {

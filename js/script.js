@@ -35,3 +35,18 @@ $( window ).resize(function() {
        content_height = window_height - 200;
     $('.scrollable-wrapper-div').height(content_height);
 });
+
+window.sr = ScrollReveal();
+console.log("fade in scrolling");
+sr.reveal('.introduction.one', { duration: 1000, delay: 100, scale: 1, easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)'});
+sr.reveal('.introduction.two', { duration: 1000, delay: 100, scale: 1, easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)' });
+sr.reveal('.introduction.three', { duration: 1000, delay: 100, scale: 1, easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)' });
+sr.reveal('.project.one', { duration: 1000, delay: 1000, scale: 1, easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)'});
+sr.reveal('.project.two', { duration: 1000, delay: 100, scale: 1, easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)' });
+sr.reveal('.project.three', { duration: 1000, delay: 100, scale: 1, easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)' });
+sr.reveal('.project.four', { duration: 1000, delay: 100, scale: 1, easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)' });
+
+
+
+
+
