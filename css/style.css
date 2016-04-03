@@ -94,6 +94,10 @@ body {
   background-color: #ddd;
 }
 
+.container {
+  padding-bottom:15px;
+}
+
 body.airplane {
   background-color: #ffffff;
 }
@@ -350,9 +354,9 @@ h3 {
 
 /*project*/
 .infoProject h1, h1.descriptionProject {
-    font-family: 'Roboto';
+    font-family: 'Cardo';
     font-weight: 400;
-    font-size: 30px;
+    font-size: 35px;
     color: #444;
     text-transform: uppercase;
     font-weight: 500;
@@ -417,6 +421,10 @@ img.scrollableImg {
   margin: 0 auto;
 }
 
+.mobileVersion a.btn.backhome {
+  display: none;
+}
+
 a.btn-block.grey.mobileVersion, a.btn-block.mobileVersion, .btnHolder.mobileVersion {
   display: none;
 }
@@ -451,6 +459,11 @@ a.btn-block.grey.mobileVersion, a.btn-block.mobileVersion, .btnHolder.mobileVers
 }
 
 /*about*/
+
+#contact a {
+  color: #444;
+  font-family: 'Roboto', 'sans-serif', 'arial';
+}
 
 #contact a {
   color: #444;
@@ -538,6 +551,7 @@ a.btn-block.grey.mobileVersion, a.btn-block.mobileVersion, .btnHolder.mobileVers
     display: none;
     width: 0;
 }
+
 .textVertical {
     transform: rotate(0);
 }
@@ -578,7 +592,6 @@ img.previewProject.smaller.right, img.previewProject.smaller.left {
     opacity: 1;
     background-color: #ffffff;
   }
-
 
 .project {
   padding: 20px 0; 
@@ -621,7 +634,15 @@ a.btn-block.grey.mobileVersion, a.btn-block.grey.mobileVersion,a.btn-block.mobil
   width: 100%;
 }
 
-
+.mobileVersion a.btn.backhome {
+  display: block;
+  margin: 0 auto 20px;
+  -webkit-transform: initial;
+  -moz-transform: initial;
+  -ms-transform: initial;
+  -o-transform: initial;
+  transform: initial;
+}
 
 /* end project page*/
 
@@ -635,7 +656,6 @@ a.btn-block.grey.mobileVersion, a.btn-block.grey.mobileVersion,a.btn-block.mobil
 /*end about*/
 
 }
-
 
 
 @media only screen and (max-width: 767px) {

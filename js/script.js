@@ -38,15 +38,26 @@ $( window ).resize(function() {
 
 window.sr = ScrollReveal();
 console.log("fade in scrolling");
+// fade titles homepage
 sr.reveal('.introduction.one', { duration: 1000, delay: 100, scale: 1, easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)'});
+sr.reveal('.introduction.About', { duration: 1000, delay: 100, scale: 1, easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)'});
 sr.reveal('.introduction.two', { duration: 1000, delay: 100, scale: 1, easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)' });
 sr.reveal('.introduction.three', { duration: 1000, delay: 100, scale: 1, easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)' });
+
+// fade in project previews
 sr.reveal('.project.one', { duration: 1000, delay: 1000, scale: 1, easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)'});
 sr.reveal('.project.two', { duration: 1000, delay: 100, scale: 1, easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)' });
 sr.reveal('.project.three', { duration: 1000, delay: 100, scale: 1, easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)' });
 sr.reveal('.project.four', { duration: 1000, delay: 100, scale: 1, easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)' });
-sr.reveal('.descriptionProject.one', { duration: 1000, delay: 100, scale: 1, easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)' });
+
+// fade in single project
+sr.reveal('.descriptionProject', { duration: 1000, delay: 100, scale: 1, easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)' });
 sr.reveal('.scroll.project.col-md-3', { duration: 1000, delay: 100, scale: 1, easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)' });
+sr.reveal('.controller', { duration: 1000, delay: 100, scale: 1, easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)' });
+sr.reveal('.mobileVersion a.btn.backhome', { duration: 1000, delay: 100, scale: 1, easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)' });
+sr.reveal('#screens', { duration: 1000, delay: 700, scale: 1, easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)' });
+
+// fade in about page
 sr.reveal('#contact', { duration: 1000, delay: 800, scale: 1, easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)' });
 
 
