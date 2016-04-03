@@ -45,7 +45,9 @@ sr.reveal('.project.one', { duration: 1000, delay: 1000, scale: 1, easing: 'cubi
 sr.reveal('.project.two', { duration: 1000, delay: 100, scale: 1, easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)' });
 sr.reveal('.project.three', { duration: 1000, delay: 100, scale: 1, easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)' });
 sr.reveal('.project.four', { duration: 1000, delay: 100, scale: 1, easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)' });
-
+sr.reveal('.descriptionProject.one', { duration: 1000, delay: 100, scale: 1, easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)' });
+sr.reveal('.scroll.project.col-md-3', { duration: 1000, delay: 100, scale: 1, easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)' });
+sr.reveal('#contact', { duration: 1000, delay: 800, scale: 1, easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)' });
 
 
 

@@ -130,13 +130,18 @@ a:active, a:hover {
   margin-left: 5px;
 }
 
-a.btn:active, a.btn:hover, a..btn-block:active, a.btn-block:hover, a.btn-block-half :active, a.btn-block-half:hover {
+a.btn:active, a.btn:hover, a.btn-block:active, a.btn-block:hover, a.btn-block-half :active, a.btn-block-half:hover {
   background-color: #FF77A0;
   text-decoration: none;
   color: #ddd;
   -webkit-box-shadow: none;
   border: 1px solid #ff77a0;
   box-shadow: none;
+}
+
+.btn.grey, .btn-block.grey, .btn-block-half.grey {
+  border: 1px solid #ddd;
+  color: #ddd;
 }
 
 .btnHolder {
@@ -148,7 +153,7 @@ a.btn.backhome {
   height: 60px;
   background-image: url(../img/back-home.svg);
   border: none;
-  margin: 10px;
+  margin: 0 10px;
   opacity: 0.5; 
   -webkit-transform: rotate(270deg);
   -moz-transform: rotate(270deg);
@@ -198,7 +203,7 @@ h2.introduction {
     font-weight: 400;
     letter-spacing: 1px;
     color: #ffffff;
-    font-size: 30px;
+    font-size: 28px;
 }
 
 h3.introduction { 
@@ -328,7 +333,6 @@ img.previewProject.smaller.right:hover, img.previewProject.smaller.left:hover, i
   font-size: 96px;
 }
 
-
 h1 {
   font-size: 2em;
 }
@@ -363,12 +367,17 @@ h3 {
     font-weight: 400;
     font-size: 15px;
     color: #444;
+    margin-bottom: 30px;
 }
 
 .infoProject h2, .infoProject h3, .descriptionProject h2, .descriptionProject h3 {
   color: #ffffff;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
+}
+
+h2.grey, h3.grey {
+  color: #444;
 }
 
 img.scrollableImg {
@@ -400,6 +409,18 @@ img.scrollableImg {
   width: 100%;
   padding-bottom: 30px;
 }
+
+.capture img.halfImg {
+  width: 50%;
+  display: block;
+  padding-bottom: 30px;
+  margin: 0 auto;
+}
+
+a.btn-block.grey.mobileVersion, a.btn-block.mobileVersion, .btnHolder.mobileVersion {
+  display: none;
+}
+
 /*end project*/
 
 
@@ -573,6 +594,35 @@ img.previewProject.smaller.right, img.previewProject.smaller.left {
 .capture {
   padding: 0;
 }
+
+.capture img.halfImg {
+  width: 100%;
+  display: block;
+  padding-bottom: 30px;
+  margin: 0 auto;
+}
+
+a.btn-block.grey, a.btn-block, a.btn-block-half.grey, a.btn-block-half {
+  display: none;
+}
+
+a.btn-block.grey.mobileVersion, a.btn-block.grey.mobileVersion,a.btn-block.mobileVersion, .btnHolder.mobileVersion {
+  display: block;
+}
+
+.mobileVersion a.btn-block-half.grey, .mobileVersion a.btn-block-half, .mobileVersion a.btn-block-half {
+  display: inline-block;
+  width: 49%;
+  margin-bottom: 10%;
+}
+
+.mobileVersion a.btn-block-half.grey.single, .mobileVersion a.btn-block-half.single {
+  display: inline-block;
+  width: 100%;
+}
+
+
+
 /* end project page*/
 
 
